@@ -62,7 +62,7 @@ body {
 main {
   position: relative;
   z-index: 2;
-  max-width: 375px;
+  max-width: 500px;
   padding: 62px 24px 0;
 }
 
@@ -82,7 +82,6 @@ main {
   margin-top: 0;
   font-size: 26px;
   font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
   color: hsl(157.4, 74.5%, 61.6%);
   line-height: 38px;
@@ -95,7 +94,6 @@ main {
 .text p {
   font-size: 15px;
   font-weight: 400;
-  text-align: center;
   color: hsl(224.6, 40.2%, 82.9%);
   line-height: 25px;
 }
@@ -157,4 +155,111 @@ button {
   color: hsl(224.2, 34.5%, 10.8%);
   box-shadow: 0px 25px 20px -20px hsla(157.4, 74.5%, 61.6%, 0.5);
   line-height: 28px;
+  cursor: pointer;
+}
+
+.dots-bg {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .wrapper {
+    background: url(../assets/tablet/image-host.jpg) no-repeat top right;
+  }
+
+  main {
+    margin-right: auto;
+    padding: 50px 39px 0;
+    margin-bottom: 257px;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 152px;
+    width: 635px;
+    height: 509px;
+    background: var(--color-bg-primary);
+  }
+
+  /* .content-wrapper * {
+    margin: 0;
+  } */
+
+  .text {
+    padding-top: 93px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .text h1 {
+    font-size: 48px;
+    line-height: 56px;
+    margin-top: 0;
+    margin-bottom: 31px;
+  }
+
+  .text p {
+    max-width: 445px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  form {
+    position: relative;
+    margin-bottom: 64px;
+  }
+
+  input {
+    margin-bottom: 0;
+    width: 427px;
+    height: 56px;
+  }
+
+  button {
+    position: absolute;
+    top: 5px;
+    right: 213px;
+    height: 46px;
+    width: 162px;
+  }
+
+  .podcast-providers {
+    justify-content: flex-start;
+    margin: 0;
+    order: 4
+  }
+
+  .podcast-providers a+a {
+    margin-left: 40px;
+  }
+
+  .podcast-providers a,
+  .podcast-providers img {
+    max-height: 29px;
+  }
+
+  .podcast-providers a:nth-of-type(3) img {
+    height: 18px;
+  }
+
+  .dots-bg {
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    height: 104px;
+    width: 232px;
+    display: inline;
+  }
+
 }
