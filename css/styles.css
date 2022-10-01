@@ -133,16 +133,16 @@ input {
   margin-bottom: 16px;
   padding-left: 32px;
   border-radius: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: 700;
   background: hsl(224.5, 26.1%, 23.3%);
   color: hsl(0, 0%, 100%);
 }
 
 input::placeholder {
-  font-size: 14px;
-  font-weight: 700;
   color: hsl(0, 0%, 100%);
   opacity: 0.5;
-  line-height: 28px;
 }
 
 button {
@@ -155,23 +155,27 @@ button {
   color: hsl(224.2, 34.5%, 10.8%);
   box-shadow: 0px 25px 20px -20px hsla(157.4, 74.5%, 61.6%, 0.5);
   line-height: 28px;
+  transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 }
 
-.dots-bg {
-  display: none;
+@media (hover: hover) {
+  button:hover {
+    background-color: #B3FFE2;
+  }
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 48em) {
 
   .wrapper {
-    background: url(../assets/tablet/image-host.jpg) no-repeat top right;
+    background: url(../assets/desktop/bg-pattern-dots.svg) no-repeat bottom 0 left 30px/232px 104px, url(../assets/tablet/image-host.jpg) no-repeat top right;
+    padding-bottom: 105px;
   }
 
   main {
     margin-right: auto;
     padding: 50px 39px 0;
-    margin-bottom: 257px;
   }
 
   .overlay {
@@ -186,14 +190,11 @@ button {
     display: flex;
     flex-direction: column;
     margin-top: 152px;
+    margin-bottom: 153px;
     width: 635px;
     height: 509px;
     background: var(--color-bg-primary);
   }
-
-  /* .content-wrapper * {
-    margin: 0;
-  } */
 
   .text {
     padding-top: 93px;
@@ -252,14 +253,52 @@ button {
   .podcast-providers a:nth-of-type(3) img {
     height: 18px;
   }
+}
 
-  .dots-bg {
-    position: absolute;
-    left: 30px;
-    bottom: 0;
-    height: 104px;
-    width: 232px;
-    display: inline;
+@media (min-width: 90em) {
+
+  .wrapper {
+    background: url(../assets/desktop/bg-pattern-dots.svg) no-repeat bottom right/232px 104px, url(../assets/desktop/image-host.jpg) no-repeat center right/888px 640px;
+    justify-content: flex-start;
+    min-height: unset;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    padding-bottom: 0;
+    height: 750px;
+    max-width: 1275px;
+    margin-left: auto;
+  }
+
+  .logo {
+    position: relative;
+    top: -28px;
+  }
+
+  main {
+    max-width: unset;
+    padding: 0;
+    margin: auto 0;
+    max-height: 640px;
+  }
+
+  .content-wrapper {
+    margin-top: 76px;
+    margin-bottom: 0;
+    width: 723px;
+  }
+
+  .text {
+    padding-top: 88px;
+  }
+
+  .text h1 {
+    font-size: 52px;
+    line-height: 62px;
+    margin-bottom: 24px;
+  }
+
+  button {
+    right: 301px;
   }
 
 }
