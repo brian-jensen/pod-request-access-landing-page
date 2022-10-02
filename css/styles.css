@@ -62,7 +62,7 @@ body {
 main {
   position: relative;
   z-index: 2;
-  max-width: 500px;
+  max-width: 31.25rem;
   padding: 62px 24px 0;
 }
 
@@ -80,11 +80,11 @@ main {
 .text h1 {
   margin-bottom: 16px;
   margin-top: 0;
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 400;
   text-transform: uppercase;
   color: hsl(157.4, 74.5%, 61.6%);
-  line-height: 38px;
+  line-height: 2.375rem;
 }
 
 .text h1 span {
@@ -92,10 +92,10 @@ main {
 }
 
 .text p {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
   color: hsl(224.6, 40.2%, 82.9%);
-  line-height: 25px;
+  line-height: 1.5625rem;
 }
 
 .podcast-providers {
@@ -119,7 +119,7 @@ main {
 }
 
 .podcast-providers a:nth-of-type(3) img {
-  height: 11px;
+  height: 0.6875rem;
 }
 
 form {
@@ -130,12 +130,12 @@ form {
 
 input {
   width: 100%;
-  height: 46px;
+  height: 2.875rem;
   margin-bottom: 16px;
   padding-left: 32px;
   border-radius: 28px;
-  line-height: 28px;
-  font-size: 14px;
+  line-height: 1.75rem;
+  font-size: 0.875rem;
   font-weight: 700;
   background: hsl(224.5, 26.1%, 23.3%);
   color: hsl(0, 0%, 100%);
@@ -149,40 +149,40 @@ input::placeholder {
 
 button {
   width: 100%;
-  height: 46px;
+  height: 2.875rem;
   border-radius: 28px;
   background: hsl(157.4, 74.5%, 61.6%);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   color: hsl(224.2, 34.5%, 10.8%);
   box-shadow: 0px 25px 20px -20px hsla(157.4, 74.5%, 61.6%, 0.5);
-  line-height: 28px;
+  line-height: 1.75rem;
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 }
 
 @media (hover: hover) {
   button:hover {
-    background-color: #B3FFE2;
+    background-color: hsl(157.1, 100%, 85.1%);
   }
 }
 
 input.error {
-  border: 1px solid #FB3E3E;
+  border: 1px solid hsl(0, 95.9%, 61.4%);
 }
 
 form span,
 form p {
   font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   position: absolute;
   left: 32px;
   top: -20px;
 }
 
 form span {
-  color: #FB3E3E;
+  color: hsl(0, 95.9%, 61.4%);
 }
 
 form p {
@@ -215,8 +215,8 @@ form p {
     flex-direction: column;
     margin-top: 152px;
     margin-bottom: 153px;
-    width: 635px;
-    height: 509px;
+    width: 39.6875rem;
+    height: 31.8125rem;
     background: var(--color-bg-primary);
   }
 
@@ -228,16 +228,16 @@ form p {
   }
 
   .text h1 {
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 3rem;
+    line-height: 3.5rem;
     margin-top: 0;
     margin-bottom: 31px;
   }
 
   .text p {
-    max-width: 445px;
-    font-size: 18px;
-    line-height: 28px;
+    max-width: 27.8125rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   form {
@@ -247,16 +247,16 @@ form p {
 
   input {
     margin-bottom: 0;
-    width: 427px;
-    height: 56px;
+    width: 26.6875rem;
+    height: 3.5rem;
   }
 
   button {
     position: absolute;
-    top: 5px;
-    right: 213px;
-    height: 46px;
-    width: 162px;
+    top: 0.3125rem;
+    right: 13.3125rem;
+    height: 2.875rem;
+    width: 10.125rem;
   }
 
   .podcast-providers {
@@ -271,18 +271,18 @@ form p {
 
   .podcast-providers a,
   .podcast-providers img {
-    max-height: 29px;
+    max-height: 1.8125rem;
   }
 
   .podcast-providers a:nth-of-type(3) img {
-    height: 18px;
+    height: 1.125rem;
   }
 
   form span,
   form p {
     top: unset;
-    left: 32px;
-    bottom: -20px;
+    left: 2rem;
+    bottom: -1.25rem;
   }
 }
 
@@ -295,8 +295,8 @@ form p {
     margin-top: 75px;
     margin-bottom: 75px;
     padding-bottom: 0;
-    height: 750px;
-    max-width: 1275px;
+    height: 46.875rem;
+    max-width: 79.6875rem;
     margin-left: auto;
   }
 
@@ -309,13 +309,13 @@ form p {
     max-width: unset;
     padding: 0;
     margin: auto 0;
-    max-height: 640px;
+    max-height: 40rem;
   }
 
   .content-wrapper {
     margin-top: 76px;
     margin-bottom: 0;
-    width: 723px;
+    width: 45.1875rem;
   }
 
   .text {
@@ -323,13 +323,13 @@ form p {
   }
 
   .text h1 {
-    font-size: 52px;
-    line-height: 62px;
+    font-size: 3.25rem;
+    line-height: 3.875rem;
     margin-bottom: 24px;
   }
 
   button {
-    right: 301px;
+    right: 18.8125rem;
   }
 
 }
