@@ -125,6 +125,7 @@ main {
 form {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 input {
@@ -138,6 +139,7 @@ input {
   font-weight: 700;
   background: hsl(224.5, 26.1%, 23.3%);
   color: hsl(0, 0%, 100%);
+  border: 1px solid transparent;
 }
 
 input::placeholder {
@@ -163,6 +165,28 @@ button {
   button:hover {
     background-color: #B3FFE2;
   }
+}
+
+input.error {
+  border: 1px solid #FB3E3E;
+}
+
+form span,
+form p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  position: absolute;
+  left: 32px;
+  top: -20px;
+}
+
+form span {
+  color: #FB3E3E;
+}
+
+form p {
+  color: hsl(157.4, 74.5%, 61.6%);
 }
 
 
@@ -252,6 +276,13 @@ button {
 
   .podcast-providers a:nth-of-type(3) img {
     height: 18px;
+  }
+
+  form span,
+  form p {
+    top: unset;
+    left: 32px;
+    bottom: -20px;
   }
 }
 
